@@ -7,4 +7,5 @@ response = re.get(url).json()
 w.write(str(response))
 w.close()
 for item in response:
-    print(item['model'])
+    if(item['model']=='توسان (ix35)‏، 2.0 لیتر دو دیفرانسیل'): 
+        print(item['price'])
